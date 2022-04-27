@@ -26,36 +26,36 @@
 
       <div class="row">
         <div class="fields">
-          <label for="fname">First Name</label>
-          <input type="text" name="fname" id="fname">
+          <label for="fname">First Name<abbr title="required">*</abbr></label>
+          <input required type="text" name="fname" id="fname">
         </div>
       
         <div class="fields">
-          <label for="lname">Last Name</label>
-          <input type="text" name="lname" id="lname">
+          <label for="lname">Last Name<abbr title="required">*</abbr></label>
+          <input required type="text" name="lname" id="lname">
         </div>
       </div>
       
       <div class="row">
         <div class="fields">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <label for="email">Email<abbr title="required">*</abbr></label>
+          <input required title="john@email.com" type="email" name="email" id="email">
         </div>
       
         <div class="fields">
           <label for="phone">Phone Number</label>
-          <input type="number" name="phone" id="phone">
+          <input required type="number" name="phone" id="phone">
         </div>
       </div>
       <div class="row">
         <div class="fields">
-          <label for="pass">Password</label>
-          <input type="password" name="pass" id="pass">
+          <label for="pass">Password<abbr title="required">*</abbr></label>
+          <input required type="password" name="pass" id="pass" minlength="8">
         </div>
       
         <div class="fields">
-          <label for="pass-confirm">Confirm Password</label>
-          <input type="password" name="pass-confirm" id="pass-confirm">
+          <label for="pass-confirm">Confirm Password<abbr title="required">*</abbr></label>
+          <input required type="password" name="pass-confirm" id="pass-confirm" minlength="8">
         </div>
       </div>
       <input type="submit" class="hidden" id="submit-btn">
@@ -69,5 +69,6 @@
       </p>
     </div>
   </div>
+
 </body>
 </html>
